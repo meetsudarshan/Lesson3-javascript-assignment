@@ -95,4 +95,7 @@ function generatePassword() {
  
 
   }
-}}}}
+  
+}}}
+return output;
+}
