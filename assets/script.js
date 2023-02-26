@@ -97,5 +97,5 @@ function generatePassword() {
   }
   
 }}}
-return output();
+return output;
 }
