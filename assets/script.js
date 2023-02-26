@@ -64,29 +64,25 @@ function generatePassword() {
     else {
 
    if (smallLetters === true && passwordObj.length < passwordLength) {
-                // var small = passwordObj.lowerChar[Math.floor(Math.random() * passwordObj.lowerChar.length)]
-                var small = passwordObj.lowerChar[Math.floor(Math.random() * 26)]
+                var small = passwordObj.lowerChar[Math.floor(Math.random() * passwordObj.lowerChar.length)]
                 output = output + small;
                 passwordObj.length++;
               }
 
     if (capitalLetters === true && passwordObj.length < passwordLength) {
-                // var caps = passwordObj.upperChar[Math.floor(Math.random() * passwordObj.upperChar.length)]
-                var caps = passwordObj.upperChar[Math.floor(Math.random() * 26)]
+                var caps = passwordObj.upperChar[Math.floor(Math.random() * passwordObj.upperChar.length)]
                 output = output + caps;
                 passwordObj.length++;
               }
     
     if (numerics === true && passwordObj.length < passwordLength) {
-                // var digits = passwordObj.numChar[Math.floor(Math.random() * passwordObj.numChar.length)]
-                var digits = passwordObj.numChar[Math.floor(Math.random() * 10)]
+                var digits = passwordObj.numChar[Math.floor(Math.random() * passwordObj.numChar.length)]
                 output = output + digits;
                 passwordObj.length++;
               }
 
     if (symbols === true && passwordObj.length < passwordLength) {
-                // var special = passwordObj.specChar[Math.floor(Math.random() * passwordObj.specChar.length)]
-                var special = passwordObj.specChar[Math.floor(Math.random() * 26)]
+                var special = passwordObj.specChar[Math.floor(Math.random() * passwordObj.specChar.length)]
                 output = output + special;
                 passwordObj.length++;
               }
